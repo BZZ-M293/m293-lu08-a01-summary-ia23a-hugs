@@ -2,20 +2,155 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zusammenfassung Modul 293</title>
-
 </head>
 <body>
-  <header>
-    
-  </header>
-  <nav>
-    
-  </nav>
-  <h1>Zusammenfassung Modul 293</h1>
 
-  <footer>
-    
-  </footer>
+<header>
+  <h1>Zusammenfassung Modul 293</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#html">HTML</a></li>
+    <li><a href="#css">CSS</a></li>
+    <li><a href="#javascript">JavaScript</a></li>
+    <li><a href="#abschluss">Abschlussprojekt</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="html">
+    <h2>HTML</h2>
+    <p>HTML (Hypertext Markup Language) ist die Standard-Auszeichnungssprache für Dokumente, die im Web angezeigt werden. Es ermöglicht die Strukturierung von Inhalten mittels Tags und Attributen.</p>
+    <ul>
+      <li>Grundlegende Tags: <code>&lt;h1&gt; bis &lt;h6&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code></li>
+      <li>Formularelemente: <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code></li>
+      <li>Listen: <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></li>
+    </ul>
+  </section>
+
+  <section id="css">
+    <h2>CSS</h2>
+    <p>CSS (Cascading Style Sheets) wird verwendet, um das Layout von Webseiten zu gestalten. Es ermöglicht die Trennung von Inhalt und Design.</p>
+    <table border="1">
+      <thead>
+      <tr>
+        <th>Eigenschaft</th>
+        <th>Beschreibung</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>color</td>
+        <td>Textfarbe</td>
+      </tr>
+      <tr>
+        <td>font-size</td>
+        <td>Textgröße</td>
+      </tr>
+      <tr>
+        <td>margin</td>
+        <td>Außenabstand</td>
+      </tr>
+      <tr>
+        <td>padding</td>
+        <td>Innenabstand</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="javascript">
+    <h2>JavaScript</h2>
+    <p>JavaScript ist eine Programmiersprache, die es ermöglicht, dynamische und interaktive Elemente auf Webseiten zu erstellen.</p>
+    <ul>
+      <li>Variablen und Datentypen</li>
+      <li>Funktionen</li>
+      <li>DOM-Manipulation</li>
+      <li>Ereignisbehandlung</li>
+    </ul>
+  </section>
+
+  <section id="abschluss">
+    <h2>Abschlussprojekt</h2>
+    <p>Im Abschlussprojekt haben wir alle erlernten Techniken kombiniert, um eine vollständige Webseite zu erstellen. Dies umfasste die Verwendung von HTML zur Strukturierung, CSS zur Gestaltung und JavaScript zur Interaktivität.</p>
+    <ol>
+      <li>Planung und Entwurf</li>
+      <li>Implementierung von HTML und CSS</li>
+      <li>Integration von JavaScript</li>
+      <li>Testen und Debugging</li>
+      <li>Bereitstellung der Webseite</li>
+    </ol>
+  </section>
+
+  <section id="form">
+    <h2>Interaktive Elemente</h2>
+    <form>
+      <fieldset>
+        <legend>Auswahlmöglichkeiten</legend>
+
+        <label for="abflughafen">Abflughafen:</label>
+        <select id="abflughafen" name="abflughafen" required>
+          <optgroup label="Deutschland">
+            <option value="fra">Frankfurt</option>
+            <option value="muc">München</option>
+            <option value="ber">Berlin</option>
+          </optgroup>
+          <optgroup label="Österreich">
+            <option value="vie">Wien</option>
+            <option value="inn">Innsbruck</option>
+          </optgroup>
+          <optgroup label="Italien">
+            <option value="fco">Rom</option>
+            <option value="mxp">Mailand</option>
+          </optgroup>
+          <optgroup label="Frankreich">
+            <option value="cdg">Paris</option>
+            <option value="nce">Nizza</option>
+          </optgroup>
+        </select>
+
+        <label>Art der Unterkunft:</label>
+        <label><input type="radio" name="unterkunft" value="hotel" required> Hotel</label>
+        <label><input type="radio" name="unterkunft" value="ferienwohnung"> Ferienwohnung</label>
+        <label><input type="radio" name="unterkunft" value="hostel"> Hostel</label>
+
+        <label for="personen">Anzahl der reisenden Personen:</label>
+        <input type="number" id="personen" name="personen" min="1" required>
+
+        <label for="reiseziel">Reiseziel:</label>
+        <input list="ziele" id="reiseziel" name="reiseziel" required>
+        <datalist id="ziele">
+        <option value="Paris"></option>
+        <option value="Rom"></option>
+        <option value="Berlin"></option>
+        <option value="Wien"></option>
+        <option value="Mailand"></option>
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>Zusätzliche Dienstleistungen</legend>
+
+        <label><input type="checkbox" name="dienstleistungen" value="reiseversicherung"> Reiseversicherung</label>
+        <label><input type="checkbox" name="dienstleistungen" value="flughafentransfer"> Flughafentransfer</label>
+        <label><input type="checkbox" name="dienstleistungen" value="zusatzgepaeck"> Zusätzliches Gepäck</label>
+        <label><input type="checkbox" name="dienstleistungen" value="priority-checkin"> Priority-Check-In</label>
+        <label><input type="checkbox" name="dienstleistungen" value="handgepaeck"> Zusätzliches Handgepäck</label>
+        <label><input type="checkbox" name="dienstleistungen" value="mietwagen"> Buchung eines Mietwagens</label>
+      </fieldset>
+
+      <input type="reset" value="Zurücksetzen">
+      <input type="submit" value="Senden">
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Modul 293 - Alle Rechte vorbehalten.</p>
+</footer>
+
 </body>
 </html>
